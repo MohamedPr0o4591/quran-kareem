@@ -1,0 +1,25 @@
+.allQuranPage .surah-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #efef;
+  background: brown;
+  border-radius: 10px;
+  padding: 10px;
+  user-select: none;
+}
+
+.allQuranPage .ayahs-container {
+  line-height: 3.5rem;
+}
+
+.allQuranPage .ayah-number {
+  display: inline;
+  border-radius: 50%;
+  color: brown;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-right: 5px solid brown;
+  border-left: 1px solid brown;
+  user-select: none;
+}

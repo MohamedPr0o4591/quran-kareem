@@ -1,0 +1,51 @@
+.juzSelectedPage {
+  position: relative;
+}
+
+.juzSelectedPage .juz-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.juzSelectedPage .surah-title {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #efef;
+  background: brown;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.juzSelectedPage .ayahs-container {
+  line-height: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.juzSelectedPage .ayah-text {
+  cursor: pointer;
+}
+
+.juzSelectedPage .ayah-number {
+  display: inline;
+  border-radius: 50%;
+  color: brown;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-right: 5px solid brown;
+  border-left: 1px solid brown;
+  user-select: none;
+}
+
+.juzSelectedPage .quranPlayer {
+  position: fixed;
+  top: 2.5rem;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-75%);
+  width: 430px;
+  height: 35px;
+  color-scheme: dark;
+}
