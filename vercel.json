@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/all-quran", "destination": "/" },
+    { "source": "/juz", "destination": "/" },
+    { "source": "/juz/:juz", "destination": "/" },
+    { "source": "/surah", "destination": "/" },
+    { "source": "/surah/:surah", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
