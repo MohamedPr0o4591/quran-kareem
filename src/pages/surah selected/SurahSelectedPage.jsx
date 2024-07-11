@@ -17,7 +17,7 @@ function SurahSelectedPage() {
   }, []);
 
   useEffect(() => {
-    if (surahDetails.ayahs && surahDetails.ayahs.length > 0) {
+    if (surahDetails.ayahs && surahDetails?.ayahs?.length > 0) {
       setCurrentAyahIndex(0);
     }
   }, [surahDetails.ayahs]);
@@ -26,7 +26,7 @@ function SurahSelectedPage() {
     let audio = document.querySelector(".quranPlayer");
 
     const handleAyahEnded = (_) => {
-      if (currentAyahIndex < surahDetails.ayahs.length - 1) {
+      if (currentAyahIndex < surahDetails?.ayahs?.length - 1) {
         setCurrentAyahIndex((prev) => prev + 1);
       } else {
         audio.pause();
@@ -45,7 +45,7 @@ function SurahSelectedPage() {
   useEffect(() => {
     let audio = document.querySelector(".quranPlayer");
 
-    if (audio && surahDetails.ayahs.length > 0) {
+    if (audio && surahDetails?.ayahs?.length > 0) {
       audio.src = surahDetails.ayahs[currentAyahIndex].audio;
       if (currentAyahIndex !== 0) {
         audio.play();
