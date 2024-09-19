@@ -14,7 +14,6 @@ function AllSurahsPage() {
     dispatch(getQuranDetails());
   }, []);
 
-
   return (
     <div className="allSurahsPage">
       <Container>
@@ -48,13 +47,21 @@ function AllSurahsPage() {
           </table>
         </div>
 
-        <div className="table-container">
+        <div className="table-container-surahs">
           <table>
             <thead>
               <tr>
                 <th>م</th>
                 <th>اسم السورة</th>
-                <th>نوعها</th>
+                <th>
+                  <div className="type">نوعها</div>
+                  <div className="type-counts">
+                    <ul>
+                      <li>نوعها</li>
+                      <li>عدد اياتها</li>
+                    </ul>
+                  </div>
+                </th>
                 <th>عدد اياتها</th>
               </tr>
             </thead>
@@ -65,10 +72,23 @@ function AllSurahsPage() {
                   <tr key={index}>
                     <td>{surah.number}</td>
                     <td>
-                      <Link to={`/surah/${surah.number}`}>{surah.name}</Link>
+                      <Link
+                        to={`/surah/${surah.number}`}
+                        className="surah-name"
+                      >
+                        {surah.name}
+                      </Link>
                     </td>
                     <td>
-                      {surah.revelationType === "Meccan" ? "مكية" : "مدنية"}
+                      <div className="type-content">
+                        {surah.revelationType === "Meccan" ? "مكية" : "مدنية"}
+                      </div>
+                      <ul className="type-list-surah">
+                        <li>
+                          {surah.revelationType === "Meccan" ? "مكية" : "مدنية"}
+                        </li>
+                        <li>{surah.numberOfAyahs}</li>
+                      </ul>
                     </td>
                     <td>{surah.numberOfAyahs}</td>
                   </tr>

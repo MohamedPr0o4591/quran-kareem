@@ -1,17 +1,21 @@
 .surahSelectedPage {
   position: relative;
   padding: 30px 0;
+
+  font-family: "Amiri Quran", serif;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .surahSelectedPage .surah-title-container {
   text-align: center;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin: 20px 0;
   font-size: 20px;
   font-weight: bold;
   color: #efef;
-  background: brown;
+  background: #630707;
   border-radius: 10px;
-  padding: 10px;
   user-select: none;
 }
 
@@ -33,15 +37,4 @@
 
 .surahSelectedPage .surah-ayah {
   cursor: pointer;
-}
-
-.surahSelectedPage .quranPlayer {
-  position: fixed;
-  top: 2.5rem;
-  z-index: 2;
-  left: 50%;
-  transform: translateX(-75%);
-  width: 430px;
-  height: 35px;
-  color-scheme: dark;
 }

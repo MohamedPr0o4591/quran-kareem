@@ -5,16 +5,19 @@
 .juzSelectedPage .juz-container {
   display: flex;
   flex-wrap: wrap;
+  font-family: "Amiri Quran", serif;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .juzSelectedPage .surah-title {
   text-align: center;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-size: 20px;
   font-weight: bold;
   color: #efef;
-  background: brown;
+  background: #630707;
   border-radius: 10px;
   user-select: none;
 }
@@ -37,15 +40,4 @@
   border-right: 5px solid brown;
   border-left: 1px solid brown;
   user-select: none;
-}
-
-.juzSelectedPage .quranPlayer {
-  position: fixed;
-  top: 2.5rem;
-  z-index: 2;
-  left: 50%;
-  transform: translateX(-75%);
-  width: 430px;
-  height: 35px;
-  color-scheme: dark;
 }

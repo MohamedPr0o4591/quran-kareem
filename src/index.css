@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  font-family: "system-ui", sans-serif;
 }
 
 body {
   direction: rtl;
+  font-family: "system-ui", serif;
   background: bisque;
 }
 
@@ -20,6 +19,17 @@ p {
 a {
   text-decoration: none;
   color: #000;
+}
+
+.quranPlayer {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 430px;
+  height: 35px;
+  color-scheme: dark;
+  bottom: 20px;
 }
 
 .aref-ruqaa-regular {

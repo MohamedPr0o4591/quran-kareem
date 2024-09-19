@@ -1,0 +1,78 @@
+/* mobile responsiveness */
+@media (min-width: 320px) and (max-width: 767px) {
+  .allSurahsPage .table-container-surahs table th:first-child,
+  .allSurahsPage .table-container-surahs table td:first-child {
+    width: 50px;
+    text-align: center;
+  }
+
+  .nav-bar .nav-links,
+  .allSurahsPage .table-container-surahs table th:last-child,
+  .allSurahsPage .table-container-surahs table td:last-child,
+  .allSurahsPage .table-container-surahs .type,
+  .allSurahsPage .table-container-surahs .type-content {
+    display: none;
+  }
+
+  .nav-bar .nav-links-sx .nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .homePage .homePage-container {
+    width: 90%;
+  }
+
+  .homePage p {
+    font-size: 1.5rem;
+  }
+
+  .allSurahsPage .table-container-surahs .type-counts,
+  .nav-bar .responsive-container {
+    display: block;
+  }
+
+  .allSurahsPage .table-container-surahs .type-counts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .allSurahsPage .table-container-surahs .type-counts ul li:first-child {
+    border-bottom: solid 1px #000;
+    padding-bottom: 5px;
+  }
+
+  .allSurahsPage .table-container-surahs .type-list-surah {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .allSurahsPage .table-container-surahs .type-list-surah li:first-child {
+    border-bottom: solid 1px #000;
+    padding-bottom: 5px;
+  }
+
+  .allSurahsPage .table-container-surahs table th:nth-child(3),
+  .allSurahsPage .table-container-surahs table td:nth-child(3) {
+    width: 100px;
+  }
+
+  .allSurahsPage .table-container-surahs table td .surah-name {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}

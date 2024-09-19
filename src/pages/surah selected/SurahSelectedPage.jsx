@@ -51,6 +51,17 @@ function SurahSelectedPage() {
         audio.play();
       }
     }
+
+    const currentAyahElement = document.getElementById(
+      `ayah-${currentAyahIndex}`
+    );
+
+    if (currentAyahElement) {
+      currentAyahElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   }, [surahDetails.ayahs, currentAyahIndex]);
 
   const handleClickAyah = (index) => {
@@ -73,10 +84,17 @@ function SurahSelectedPage() {
         <div className="ayahs-container">
           {surahDetails?.ayahs?.map((ayah, index) => {
             return (
-              <div key={index}>
+              <div
+                key={index}
+                id={`ayah-${index}`}
+                style={{
+                  scrollMarginTop: 100 + "px",
+                }}
+              >
                 <span
-                  className={`surah-ayah fs-2 ${currentAyahIndex === index ? "fw-bold text-primary" : ""
-                    }`}
+                  className={`surah-ayah fs-2 ${
+                    currentAyahIndex === index ? "fw-bold text-primary" : ""
+                  }`}
                   onClick={(_) => handleClickAyah(index)}
                 >
                   {ayah.text}

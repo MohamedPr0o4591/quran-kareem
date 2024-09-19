@@ -10,6 +10,10 @@
   justify-content: center;
 }
 
+.nav-bar .responsive-container {
+  display: none;
+}
+
 .nav-bar div,
 .nav-bar h2,
 .nav-bar .nav-links,
@@ -35,4 +39,17 @@
   background: #000;
   border-radius: 5px;
   padding: 10px 20px;
+}
+
+.nav-bar .nav-links-sx {
+  position: absolute;
+  width: 100%;
+  background: #fbd4a0;
+  margin: auto;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }

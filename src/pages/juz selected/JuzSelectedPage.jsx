@@ -49,6 +49,17 @@ function JuzSelectedPage() {
         audio.play();
       }
     }
+
+    const currentAyahElement = document.getElementById(
+      `ayah-${currentAyahIndex}`
+    );
+
+    if (currentAyahElement) {
+      currentAyahElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   }, [ayahsData, currentAyahIndex]);
 
   const handleClickAyah = (index) => {
@@ -85,7 +96,12 @@ function JuzSelectedPage() {
                 )}
 
                 <div className="ayahs-container">
-                  <div>
+                  <div
+                    id={`ayah-${index}`}
+                    style={{
+                      scrollMarginTop: 100 + "px",
+                    }}
+                  >
                     <span
                       className={`ayah-text fs-3 ${
                         index === currentAyahIndex ? "fw-bold text-primary" : ""
