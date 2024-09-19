@@ -73,12 +73,10 @@ function SurahSelectedPage() {
         <div className="ayahs-container">
           {surahDetails?.ayahs?.map((ayah, index) => {
             return (
-              <div>
+              <div key={index}>
                 <span
-                  key={index}
-                  className={`surah-ayah fs-2 ${
-                    currentAyahIndex === index ? "fw-bold text-primary" : ""
-                  }`}
+                  className={`surah-ayah fs-2 ${currentAyahIndex === index ? "fw-bold text-primary" : ""
+                    }`}
                   onClick={(_) => handleClickAyah(index)}
                 >
                   {ayah.text}

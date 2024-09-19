@@ -14,9 +14,6 @@ function AllSurahsPage() {
     dispatch(getQuranDetails());
   }, []);
 
-  useEffect(() => {
-    console.log(detailsQuran);
-  }, [detailsQuran]);
 
   return (
     <div className="allSurahsPage">
