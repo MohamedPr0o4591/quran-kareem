@@ -14,9 +14,12 @@ function SurahSelectedPage() {
   const [currentAyahIndex, setCurrentAyahIndex] = useState(0);
 
   useEffect(() => {
-    document.title = `القرآن الكريم - ${surahDetails.name}`;
     dispatch(getSurah(params.surah));
   }, []);
+
+  useEffect(() => {
+    document.title = `القرآن الكريم - ${surahDetails.name}`;
+  }, [surahDetails.name]);
 
   useEffect(() => {
     if (surahDetails.ayahs && surahDetails?.ayahs?.length > 0) {
