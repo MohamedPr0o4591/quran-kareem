@@ -4,6 +4,7 @@ import { Box, Container, Stack } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { getSurah } from "../../Redux/Actions/actions";
+
 function SurahSelectedPage() {
   const params = useParams();
   const surahDetails = useSelector((state) => state.GET_SURAH.surah);
@@ -84,13 +85,7 @@ function SurahSelectedPage() {
         <div className="ayahs-container">
           {surahDetails?.ayahs?.map((ayah, index) => {
             return (
-              <span
-                key={index}
-                id={`ayah-${index}`}
-                style={{
-                  scrollMarginTop: 100 + "px",
-                }}
-              >
+              <span key={index} id={`ayah-${index}`}>
                 <span
                   className={`surah-ayah fs-2 ${
                     currentAyahIndex === index ? "fw-bold text-primary" : ""

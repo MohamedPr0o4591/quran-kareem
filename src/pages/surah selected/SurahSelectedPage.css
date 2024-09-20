@@ -22,17 +22,24 @@
 .surahSelectedPage .ayahs-container {
   line-height: 3.5rem;
   display: inline-block;
-  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.surahSelectedPage .ayahs-container > span {
+  scroll-margin-top: 100px;
 }
 
 .surahSelectedPage .surah-ayah-number {
-  display: inline;
+  display: inline-flex;
   border-radius: 50%;
   color: brown;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-right: 5px solid brown;
   border-left: 1px solid brown;
   user-select: none;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .surahSelectedPage .surah-ayah {

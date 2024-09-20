@@ -3,11 +3,11 @@
 }
 
 .juzSelectedPage .juz-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   font-family: "Amiri Quran", serif;
   font-size: 1.2rem;
   font-weight: 500;
+  text-align: justify;
 }
 
 .juzSelectedPage .surah-title {
@@ -24,8 +24,10 @@
 
 .juzSelectedPage .ayahs-container {
   line-height: 3.5rem;
-  display: flex;
-  flex-wrap: wrap;
+}
+
+.juzSelectedPage .ayahs-container > span {
+  scroll-margin-top: 100px;
 }
 
 .juzSelectedPage .ayah-text {
@@ -33,11 +35,14 @@
 }
 
 .juzSelectedPage .ayah-number {
-  display: inline;
+  display: inline-flex;
   border-radius: 50%;
   color: brown;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-right: 5px solid brown;
   border-left: 1px solid brown;
   user-select: none;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
 }

@@ -3,7 +3,7 @@ import "./JuzSelectedPage.css";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAyahsByJuz } from "../../Redux/Actions/actions";
-import { Box, Container } from "@mui/material";
+import { Container } from "@mui/material";
 
 function JuzSelectedPage() {
   const params = useParams();
@@ -78,7 +78,7 @@ function JuzSelectedPage() {
         <div className="juz-container">
           {ayahsData?.map((ayah, index) => {
             return (
-              <Box
+              <span
                 key={index}
                 className="surah-box"
                 sx={{
@@ -95,13 +95,8 @@ function JuzSelectedPage() {
                   </div>
                 )}
 
-                <div className="ayahs-container">
-                  <div
-                    id={`ayah-${index}`}
-                    style={{
-                      scrollMarginTop: 100 + "px",
-                    }}
-                  >
+                <span className="ayahs-container">
+                  <span id={`ayah-${index}`}>
                     <span
                       className={`ayah-text fs-3 ${
                         index === currentAyahIndex ? "fw-bold text-primary" : ""
@@ -113,9 +108,9 @@ function JuzSelectedPage() {
                     <p className="ayah-number px-2 mx-2 fs-3 aref-ruqaa-bold">
                       {ayah.numberInSurah.toLocaleString("ar-EG")}
                     </p>
-                  </div>
-                </div>
-              </Box>
+                  </span>
+                </span>
+              </span>
             );
           })}
         </div>
