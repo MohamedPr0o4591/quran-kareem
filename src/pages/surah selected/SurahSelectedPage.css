@@ -21,7 +21,7 @@
 
 .surahSelectedPage .ayahs-container {
   line-height: 3.5rem;
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
 }
 

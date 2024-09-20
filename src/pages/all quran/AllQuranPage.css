@@ -11,7 +11,9 @@
 }
 
 .allQuranPage .ayahs-container {
+  display: inline-block;
   line-height: 3.5rem;
+  font-family: "Amiri Quran", serif;
 }
 
 .allQuranPage .ayah-number {

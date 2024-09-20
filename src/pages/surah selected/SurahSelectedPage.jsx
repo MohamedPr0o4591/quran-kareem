@@ -84,7 +84,7 @@ function SurahSelectedPage() {
         <div className="ayahs-container">
           {surahDetails?.ayahs?.map((ayah, index) => {
             return (
-              <div
+              <span
                 key={index}
                 id={`ayah-${index}`}
                 style={{
@@ -102,7 +102,7 @@ function SurahSelectedPage() {
                 <p className="surah-ayah-number aref-ruqaa-bold px-2 mx-2 fs-3">
                   {ayah.numberInSurah.toLocaleString("ar-EG")}
                 </p>
-              </div>
+              </span>
             );
           })}
         </div>
