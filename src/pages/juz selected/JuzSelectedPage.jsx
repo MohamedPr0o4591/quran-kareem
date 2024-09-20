@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAyahsByJuz } from "../../Redux/Actions/actions";
 import { Container } from "@mui/material";
+import FinalMessage from "../../components/FinalMessage";
 
 function JuzSelectedPage() {
   const params = useParams();
@@ -116,6 +117,8 @@ function JuzSelectedPage() {
         </div>
 
         <audio src="" controls className="quranPlayer" />
+
+        <FinalMessage />
       </Container>
     </div>
   );

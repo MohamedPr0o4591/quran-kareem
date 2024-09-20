@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllQuran } from "../../Redux/Actions/actions";
 import { Box, Container } from "@mui/material";
 import "./AllQuranPage.css";
+import FinalMessage from "../../components/FinalMessage";
 
 function AllQuranPage() {
   const data = useSelector((state) => state.GET_SURAHS.surahs);
@@ -42,6 +43,9 @@ function AllQuranPage() {
             </Box>
           );
         })}
+
+      <FinalMessage />
+
       </Container>
     </div>
   );

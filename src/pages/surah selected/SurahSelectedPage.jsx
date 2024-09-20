@@ -4,6 +4,7 @@ import { Box, Container, Stack } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { getSurah } from "../../Redux/Actions/actions";
+import FinalMessage from "../../components/FinalMessage";
 
 function SurahSelectedPage() {
   const params = useParams();
@@ -112,6 +113,8 @@ function SurahSelectedPage() {
       </Container>
 
       <audio src="" controls className="quranPlayer" />
+
+      <FinalMessage />
     </div>
   );
 }
