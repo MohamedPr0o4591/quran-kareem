@@ -8,7 +8,12 @@ const style = {
 };
 
 function FinalMessage() {
-  return <h4 style={style}>لا تنسنا بدعوة صالحة من قلبك بظهر الغيب</h4>;
+  return (
+    <>
+      <h4 style={style}>لا تنسنا بدعوة صالحة من قلبك بظهر الغيب</h4>
+      <h4 style={style}>ولأخواتنا الفلسطينيين الغاليين في الله</h4>
+    </>
+  );
 }
 
 export default FinalMessage;

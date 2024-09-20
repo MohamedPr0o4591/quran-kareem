@@ -9,14 +9,14 @@
   position: relative;
   min-width: 285px;
   flex: 1;
-  background: #ffdaaf;
+  background: #f0e6d2;
   height: 100px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .allJuzPage .juz-box a {
@@ -26,11 +26,19 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  color: #4a4a4a;
 }
 
 .allJuzPage .juz-box p {
   position: absolute;
   left: 10px;
   font-size: 4rem;
-  opacity: 0.3;
+  opacity: 0.2;
+  color: #8b4513;
+}
+
+.allJuzPage .juz-box:hover {
+  background: #e6d9c0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
