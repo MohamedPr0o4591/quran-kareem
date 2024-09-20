@@ -16,11 +16,13 @@
   margin: 20px 0;
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
-  border: 2px solid #5d3a1a;
-  background: #8b4513;
+  color: #000;
   border-radius: 10px;
   user-select: none;
+  background: url(../../../public/title-surah-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .juzSelectedPage .ayahs-container {
