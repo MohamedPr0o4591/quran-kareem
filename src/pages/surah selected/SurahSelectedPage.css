@@ -13,9 +13,10 @@
   margin: 20px 0;
   font-size: 20px;
   font-weight: bold;
-  color: #efef;
-  background: #630707;
+  color: #fff;
+  background: #8b4513;
   border-radius: 10px;
+  border: 2px solid #5d3a1a;
   user-select: none;
 }
 
@@ -23,6 +24,7 @@
   line-height: 3.5rem;
   display: inline-block;
   text-align: justify;
+  color: #1a1a1a;
 }
 
 .surahSelectedPage .ayahs-container > span {
@@ -32,16 +34,21 @@
 .surahSelectedPage .surah-ayah-number {
   display: inline-flex;
   border-radius: 50%;
-  color: brown;
+  color: #8b4513;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-right: 5px solid brown;
-  border-left: 1px solid brown;
+  border-right: 5px solid #8b4513;
+  border-left: 1px solid #8b4513;
   user-select: none;
   height: 30px;
   justify-content: center;
   align-items: center;
+  background: #f7f1e3;
 }
 
 .surahSelectedPage .surah-ayah {
   cursor: pointer;
+}
+
+.surahSelectedPage .surah-ayah:hover {
+  background-color: #e8e0d0;
 }

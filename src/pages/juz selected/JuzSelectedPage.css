@@ -16,8 +16,9 @@
   margin: 20px 0;
   font-size: 20px;
   font-weight: bold;
-  color: #efef;
-  background: #630707;
+  color: #fff;
+  border: 2px solid #5d3a1a;
+  background: #8b4513;
   border-radius: 10px;
   user-select: none;
 }
@@ -34,15 +35,20 @@
   cursor: pointer;
 }
 
+.juzSelectedPage .ayah-text:hover {
+  background-color: #e8e0d0;
+}
+
 .juzSelectedPage .ayah-number {
   display: inline-flex;
   border-radius: 50%;
-  color: brown;
+  color: #8b4513;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-right: 5px solid brown;
-  border-left: 1px solid brown;
+  border-right: 5px solid #8b4513;
+  border-left: 1px solid #8b4513;
   user-select: none;
   height: 30px;
   justify-content: center;
+  background: #f7f1e3;
   align-items: center;
 }

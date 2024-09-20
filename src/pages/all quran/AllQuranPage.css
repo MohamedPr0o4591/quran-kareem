@@ -3,11 +3,16 @@
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
-  color: #efef;
-  background: brown;
+  color: #fff;
+  border: 2px solid #5d3a1a;
+  background: #8b4513;
   border-radius: 10px;
   padding: 10px;
   user-select: none;
+}
+
+.allQuranPage .surah-title > p {
+  font-family: "Amiri Quran", serif;
 }
 
 .allQuranPage .ayahs-container {
@@ -20,12 +25,13 @@
 .allQuranPage .ayah-number {
   display: inline-flex;
   border-radius: 50%;
-  color: brown;
+  color: #8b4513;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-right: 5px solid brown;
-  border-left: 1px solid brown;
+  border-right: 5px solid #8b4513;
+  border-left: 1px solid #8b4513;
   user-select: none;
   height: 30px;
+  background: #f7f1e3;
   justify-content: center;
   align-items: center;
 }
