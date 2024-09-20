@@ -1,6 +1,6 @@
 .nav-bar {
   position: sticky;
-  background: #fbd4a0;
+  background: #e8dcc8;
   padding: 20px 0;
   margin: 20px 5px;
   border-radius: 10px;
@@ -32,11 +32,12 @@
 .nav-bar .nav-links li a {
   padding: 0 10px;
   font-size: 20px;
+  color: #4a3c2e;
 }
 
 .nav-bar .nav-links li a.active {
-  color: #fbd4a0;
-  background: #000;
+  color: #e8dcc8;
+  background: #7d6b59;
   border-radius: 5px;
   padding: 10px 20px;
 }
@@ -44,7 +45,7 @@
 .nav-bar .nav-links-sx {
   position: absolute;
   width: 100%;
-  background: #fbd4a0;
+  background: #e8dcc8;
   margin: auto;
   top: 4rem;
   left: 0;

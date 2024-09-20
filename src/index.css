@@ -7,18 +7,20 @@
 body {
   direction: rtl;
   font-family: "system-ui", serif;
-  background: bisque;
+  background: #f8f1e3;
+  color: #3a3a3a;
 }
 
 p {
   font-size: 2.2rem;
   font-weight: 600;
+  line-height: 1.6;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #8a5c3e;
 }
 
 .quranPlayer {
@@ -30,6 +32,7 @@ a {
   height: 35px;
   color-scheme: dark;
   bottom: 20px;
+  opacity: 0.9;
 }
 
 .aref-ruqaa-regular {
