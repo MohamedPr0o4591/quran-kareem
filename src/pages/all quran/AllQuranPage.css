@@ -1,3 +1,10 @@
+.allQuranPage {
+  min-height: calc(100vh - (78.39px + 1rem));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .allQuranPage .surah-title {
   text-align: center;
   margin-bottom: 20px;
